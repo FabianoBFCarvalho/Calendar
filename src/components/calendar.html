@@ -1,4 +1,13 @@
+
+<ng-template #eventTemplate>
+    <div class="teste"> 
+        <p> {{event}} 11 </p>
+    </div>
+
+</ng-template>
+
 <mwl-calendar-day-view
     [viewDate]="viewDate"
-    [events]="events">
+    [events]="events"
+    [hourSegmentTemplate]="eventTemplate">
 </mwl-calendar-day-view>

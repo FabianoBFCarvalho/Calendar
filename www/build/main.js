@@ -58,7 +58,7 @@ var HomePage = (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/dev17/Project/Calendar/src/pages/home/home.html"*/`<!-- <ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header> -->\n\n<ion-content>\n  <calendario></calendario>\n</ion-content>\n`/*ion-inline-end:"/home/dev17/Project/Calendar/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/dev17/Project/Calendar/src/pages/home/home.html"*/`\n<ion-content>\n  <calendario></calendario>\n</ion-content>\n`/*ion-inline-end:"/home/dev17/Project/Calendar/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], HomePage);
@@ -268,7 +268,7 @@ var MyCalendarDDD = (function () {
     }
     MyCalendarDDD = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'calendario',template:/*ion-inline-start:"/home/dev17/Project/Calendar/src/components/calendar.html"*/`<mwl-calendar-day-view\n    [viewDate]="viewDate"\n    [events]="events">\n</mwl-calendar-day-view>`/*ion-inline-end:"/home/dev17/Project/Calendar/src/components/calendar.html"*/
+            selector: 'calendario',template:/*ion-inline-start:"/home/dev17/Project/Calendar/src/components/calendar.html"*/`\n<ng-template #eventTemplate>\n    <div class="teste"> \n        <p> {{event}} 11 </p>\n    </div>\n\n</ng-template>\n\n<mwl-calendar-day-view\n    [viewDate]="viewDate"\n    [events]="events"\n    [hourSegmentTemplate]="eventTemplate">\n</mwl-calendar-day-view>`/*ion-inline-end:"/home/dev17/Project/Calendar/src/components/calendar.html"*/
         })
     ], MyCalendarDDD);
     return MyCalendarDDD;
